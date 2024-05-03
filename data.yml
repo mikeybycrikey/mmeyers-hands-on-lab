@@ -8,7 +8,23 @@ jobs:
     name: Job 1
     steps: []
     subgraphs: []
-locations: {}
+locations:
+  SRC:
+    mappingDefinitions:
+      "2":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+      "3":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+  WORK:
+    mappingDefinitions:
+      "2":
+        database: MMEYERS
+        schema: WORKTEST
+      "3":
+        database: MMEYERS
+        schema: WORKPROD
 macros: {}
 packages: {}
 projects: {}
